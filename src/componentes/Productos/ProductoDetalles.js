@@ -88,26 +88,7 @@ const handleInput = e =>{
 
       </div>
     }
-    <h2 className="relacionado">Productos Relacionados</h2>
-    <div className="productos">
-    {productos.map((producto) =>{
-          if(item < 6 &&(detalle.category === producto.category) ){
-            item++;
-            return (<ProductoItem
-            key={producto.id}
-            id={producto.id}
-            title={producto.title}
-            price={producto.price}
-            image={producto.image}
-            category={producto.category}
-            img1={producto.img1}
-            img2={producto.img2}
-            cantidad={producto.cantidad}
-          />)
-          }
-          })
-          }
-      </div>
+    
     </>
   )
 }
