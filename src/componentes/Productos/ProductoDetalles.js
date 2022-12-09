@@ -50,15 +50,15 @@ const handleInput = e =>{
           <p className="nuevo">Nuevo</p>
           <div className="size">
             <select placeholder="Tamaño">
-              <option value="1">1</option>
-              <option value="1">2</option>
-              <option value="1">3</option>
-              <option value="1">4</option>
-              <option value="1">5</option>
-              <option value="1">6</option>
-              <option value="1">7</option>
-              <option value="1">8</option>
-              <option value="1">9</option>
+              <option value="1">34</option>
+              <option value="1">35</option>
+              <option value="1">36</option>
+              <option value="1">37</option>
+              <option value="1">38</option>
+              <option value="1">40</option>
+              <option value="1">41</option>
+              <option value="1">42</option>
+              <option value="1">43</option>
             </select>
             <p>Tamaño</p>
           </div>
@@ -90,7 +90,7 @@ const handleInput = e =>{
     }
     <h2 className="relacionado">Productos Relacionados</h2>
     <div className="productos">
-        {productos.map((producto) =>{
+    {productos.map((producto) =>{
           if((item < 6)&&(detalle.category === producto.category) ){
             item++;
             return <ProductoItem
