@@ -93,7 +93,7 @@ const handleInput = e =>{
     {productos.map((producto) =>{
           if(item < 6 &&(detalle.category === producto.category) ){
             item++;
-            return <ProductoItem
+            return (<ProductoItem
             key={producto.id}
             id={producto.id}
             title={producto.title}
@@ -103,7 +103,7 @@ const handleInput = e =>{
             img1={producto.img1}
             img2={producto.img2}
             cantidad={producto.cantidad}
-          />
+          />)
           }
           })
           }
