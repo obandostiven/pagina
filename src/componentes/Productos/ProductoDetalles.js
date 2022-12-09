@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { DataContext } from '../../contexto/DataProvider';
 import { useParams } from 'react-router-dom';
-import { ProductoItem } from './ProductoItem';
+
 
 
 export const ProductoDetalles = () => {
@@ -12,12 +12,12 @@ export const ProductoDetalles = () => {
   const [url, setUrl] = useState(0);
   const [images, setImages] = useState('')
   const params = useParams();
-  let item = 0;
+ 
   
 
   useEffect(() =>{
     productos.forEach(producto =>{
-      item = 0;
+      
       if(producto.id === parseInt(params.id)){
         setDetalle(producto)
         setUrl(0)
