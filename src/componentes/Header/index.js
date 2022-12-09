@@ -19,6 +19,7 @@ const toogleMenu = () =>{
       <Link to="/">
         <div className="logo">
           <img src={Nike} alt="logo" width="150"/>
+          
         </div>
       </Link>
       <ul>

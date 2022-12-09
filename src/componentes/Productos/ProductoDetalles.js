@@ -12,7 +12,7 @@ export const ProductoDetalles = () => {
   const [url, setUrl] = useState(0);
   const [images, setImages] = useState('')
   const params = useParams();
- 
+  
   
 
   useEffect(() =>{
@@ -72,23 +72,21 @@ const handleInput = e =>{
 
         <input type="range" min="1" max="36" value={url} onChange={handleInput}/>
         <div className="description">
-          <p><b>description:</b> comillas. 1. Signo ortográfico doble del cual se
-           usan diferentes tipos en español: las comillas angulares, también llamadas 
-           latinas o españolas (« »), las inglesas (“ ”) y las simples (‘ ’). Las 
-           comillas inglesas y las simples se escriben en la parte alta del renglón,
-            mientras que las angulares se escriben centradas. En los textos impresos,
-             se recomienda utilizar en primera instancia las comillas angulares.
-             <b>  comillas. 1. Signo ortográfico doble del cual se
-           usan diferentes tipos en español: las comillas angulares, también llamadas 
-           latinas o españolas (« »), las inglesas (“ ”) y las simples (‘ ’). Las 
-           comillas inglesas y las simples se escriben en la parte alta del renglón,
-            mientras que las angulares se escriben centradas. En los textos impresos,
-             se recomienda utilizar en primera instancia las comillas angulares.</b></p>
+          <p><b>Description:</b> Los tenis Nike son zapatos predominantemente 
+          deportivos para mujeres y hombres y se caracterizan por ser ultraligeros 
+          debido a que se usan para hacer ejercicio, practicar algún deporte o recorrer 
+          grandes distancias a pie. Estos tenis suelen tener ajuste por agujetas o por 
+          bandas elásticas que se ajustan al pie.
+             <b> Este producto es sumamente popular con los usuarios por la tecnología
+               que implementa, por ejemplo, la amortiguación de la pisada reduciendo el
+                impacto del pie con el suelo gracias a las gruesas suelas de este. 
+                También son sumamente útiles para actividades en movimiento ya que el
+                 pie no sudará debido a la transpiración constante.</b></p>
         </div>
 
       </div>
     }
-    
+   
     </>
   )
 }

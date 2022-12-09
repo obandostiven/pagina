@@ -7,7 +7,7 @@ export const Inicio = () => {
     <div className="Inicio">
       <Link to="/">
         <h1 className="title">Inicio</h1>
-        
+        <img src={Portada}alt="Inicio"/>
       </Link>
       <Link to="/Productos">
         <h1 className="title">Productos</h1>
