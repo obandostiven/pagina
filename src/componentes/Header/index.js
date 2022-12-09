@@ -8,7 +8,7 @@ const value = useContext(DataContext);
 const [menu, setMenu] = value.menu;
 const [carrito] = value.carrito
 
-console.log(menu)
+
 
 const toogleMenu = () =>{
   setMenu(!menu)

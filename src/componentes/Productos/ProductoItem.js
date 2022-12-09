@@ -1,31 +1,36 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { DataContext } from "../../contexto/DataProvider";
-
-export const ProductoItem = ({ id, title, price, image, category }) => {
+import { Link } from "react-router-dom";
+export const ProductoItem = ({
+  id,
+  title,
+  price,
+  image,
+  category
+}) => {
   const value = useContext(DataContext);
-  const addCarrito = addCarrito;
+  const addCarrito = value.addCarrito;
 
   return (
     <div className="producto">
-      <a href="/text">
+      <Link to={`/producto/${id}`}>
         <div className="producto_img">
           <img src={image} alt={title} />
         </div>
-      </a>
+      </Link>
       <div className="producto_footer">
         <h1> {title} </h1>
         <p> {category} </p>
         <p className="price">${price}</p>
       </div>
       <div className="buttom">
-        <button className="btn" onClick={() => addCarrito (id)}>
+        <button className="btn" onClick={() => addCarrito(id)}>
           Añadir al Carrito
         </button>
         <div>
-          <a href="/text" className="btn">
+          <Link to={`/producto/${id}`} className="btn">
             Vista
-          </a>
+          </Link>
         </div>
       </div>
     </div>
