@@ -112,7 +112,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 1,
+        id: 12,
         title: "Nike LD Waffle Sacai Black Nylon",
         price: 135000,
         image: require('./componentes/imagenes/img01.jpg'),
@@ -122,7 +122,7 @@ const data = {
         cantidad: 1,
       },
       {
-        id: 2,
+        id: 13,
         title: "Nike Dunk Low Off-White Pine Green",
         price: 150000,
         image: require('./componentes/imagenes/img02.jpg'),
@@ -132,7 +132,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 3,
+        id: 14,
         title: "Nike Air Force 1 Low Supreme Black",
         price: 170000,
         image: require('./componentes/imagenes/img03.jpg'),
@@ -142,7 +142,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 4,
+        id: 15,
         title: "Nike LD Waffle Sacai White Nylon",
         price: 399000,
         image: require('./componentes/imagenes/img04.jpg'),
@@ -152,7 +152,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 5,
+        id: 16,
         title: "Nike Dunk Low SP Kentucky (2021)",
         price: 230000,
         image: require('./componentes/imagenes/img05.jpg'),
@@ -162,7 +162,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 6,
+        id: 17,
         title: "Nike Dunk Low Off-White University",
         price: 180000,
         image: require('./componentes/imagenes/img06.jpg'),
@@ -172,7 +172,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 7,
+        id: 18,
         title: "Nike Air Max 2 Light Atmos",
         price: 360000,
         image: require('./componentes/imagenes/img07.jpg'),
@@ -182,7 +182,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 8,
+        id: 19,
         title: "Nike Air Force 1 Low CLOT Blue Silk",
         price: 335000,
         image: require('./componentes/imagenes/img08.jpg'),
@@ -192,7 +192,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 9,
+        id: 20,
         title: "Nike Air Max 90 OG Volt (2020)",
         price: 799000,
         image: require('./componentes/imagenes/img09.jpg'),
@@ -202,7 +202,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 10,
+        id: 21,
         title: "Nike Dunk High Varsity Maize",
         price: 501000,
         image: require('./componentes/imagenes/img10.jpg'),
@@ -212,7 +212,7 @@ const data = {
         cantidad: 1
       },
       {
-        id: 11,
+        id: 22,
         title: "Nike Air Rubber Dunk Off-White UNC",
         price: 377000,
         image: require('./componentes/imagenes/img011.jpg'),

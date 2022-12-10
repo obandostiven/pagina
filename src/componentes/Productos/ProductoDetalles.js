@@ -9,7 +9,7 @@ export const ProductoDetalles = () => {
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;
   const [detalle, setDetalle] = useState([])
-  const [url, setUrl] = useState(0);
+  const [url, setUrl] = useState("01");
   const [images, setImages] = useState('')
   const params = useParams();
   
@@ -20,7 +20,7 @@ export const ProductoDetalles = () => {
       
       if(producto.id === parseInt(params.id)){
         setDetalle(producto)
-        setUrl(0)
+        setUrl("01")
 
       }
     })
@@ -30,7 +30,7 @@ export const ProductoDetalles = () => {
     const values = `${detalle.img1}${url}${detalle.img2}`
     setImages(values);
 
-  },[url, params.id])
+  })
 
 const handleInput = e =>{
   const number = e.target.value.toString().padStart(2,'01' )
@@ -64,10 +64,7 @@ const handleInput = e =>{
           </div>
         </div>
         <button onClick={()=>addCarrito(detalle.id)}>Añadir al carrito</button>
-        {
-          url ? <img src={images} alt={detalle.title}/> : <img src={detalle.image.default} alt={detalle.title}/>
-        }
-        
+         <img src={images} alt={detalle.title}/> 
 
 
         <input type="range" min="1" max="36" value={url} onChange={handleInput}/>
